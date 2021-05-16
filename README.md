@@ -49,13 +49,13 @@ Includes the number of places instead of alternative phone number
 | customer_email                                      | Email del cliente                        | String(40)  | Obligatorio                                                                  |
 | customer_phone                                      | Teléfono alternativo del cliente         | String(15)  | Opcional                                                                     |
 | comments                                            | Comentarios                              | String  | Opcional                                                                     |
-| street                                              | Dirección conductor (calle)              | String(60)  | Opcional                                                                     |
-| number                                              | Dirección conductor (número)             | String(10)  | Opcional                                                                     |
-| complement                                          | Dirección conductor (complemento)        | String(20)  | Opcional                                                                     |
-| city                                                | Dirección conductor (ciudad)             | String(60)  | Opcional                                                                     |
-| state                                               | Dirección conductor (provincia o estado) | String(60)  | Opcional                                                                     |
-| country                                             | Dirección conductor (país)               | String(50)  | Opcional                                                                     |
-| zip                                                 | Dirección conductor (código postal)      | String(10)  | Opcional                                                                     |
+| street                                              | Dirección (calle)                        | String(60)  | Opcional                                                                     |
+| number                                              | Dirección (número)                       | String(10)  | Opcional                                                                     |
+| complement                                          | Dirección (complemento)                  | String(20)  | Opcional                                                                     |
+| city                                                | Dirección (ciudad)                       | String(60)  | Opcional                                                                     |
+| state                                               | Dirección (provincia o estado)           | String(60)  | Opcional                                                                     |
+| country                                             | Dirección (país)                         | String(50)  | Opcional                                                                     |
+| zip                                                 | Dirección (código postal)                | String(10)  | Opcional                                                                     |
 | fligth_airport_origin                               | Aeropuerto origen                        | String(100)  | Opcional                                                                     |
 | flight_company                                      | Compañía aérea                           | String(80)  | Opcional                                                                     |
 | flight_number                                       | Número de vuelo                          | String(10)  | Opcional                                                                     |
