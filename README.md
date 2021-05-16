@@ -1,20 +1,19 @@
 # MyBooking custom complete form
 
-MyBooking Theme has defined a simple complete/checkout form. It includes
-the basic fields in order to keep customer full name and contact details
+MyBooking Reservation Engine and Theme have defined a simple complete/checkout form. 
+It includes the basic fields in order to keep customer full name and contact details
 like phone number and e-mail address.
 
-Sometimes the customer requires extra fields. MyBooking Reservation Engine
-allows two ways to define them:
+Sometimes the customer requires extra fields. MyBooking Reservation Engine allows two ways
+to define them:
 
 1. Creating a child theme and build a custom mybooking-plugin-complete.php 
 2. Use an extension plugin like https://wordpress.org/plugins/header-footer-code-manager/ or
 https://wordpress.org/plugins/custom-css-js/ and create one document for each
 language.
 
-This project holds a different set of custom template form with the
-most common used fields ready to use. Just create a document the
-plugin described and insert the code.
+This project holds a different set of custom template form with the most common used fields 
+ready to use. Just create a document the plugin described and insert the code.
 
 ## Pre-made forms
 
