@@ -7,8 +7,8 @@ like phone number and e-mail address.
 Sometimes the customer requires extra fields. MyBooking Reservation Engine
 allows two ways to define them:
 
-1 - Creating a child theme and build a custom mybooking-plugin-complete.php 
-2 - Use an extension plugin like https://wordpress.org/plugins/header-footer-code-manager/ or
+1. Creating a child theme and build a custom mybooking-plugin-complete.php 
+2. Use an extension plugin like https://wordpress.org/plugins/header-footer-code-manager/ or
 https://wordpress.org/plugins/custom-css-js/ and create one document for each
 language.
 
