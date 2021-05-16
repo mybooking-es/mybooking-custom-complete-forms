@@ -18,6 +18,10 @@ plugin described and insert the code.
 
 ## Pre-made forms
 
+These are forms ready to use with mybooking theme. If you are using other theme, we recommend
+to use the theme CSS classes to build the forms that match the theme design guides. Take
+these forms as a reference of the fields and sizes.
+
 ### renting-complete-standard-rentacar
  
 Includes the following fields:
