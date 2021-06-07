@@ -1,39 +1,38 @@
-<script type="text/tmpl" id="script_renting_complete_form_tmpl_es">
-
-  <h4 class="brand-primary my-3">Información del cliente</h4>
-  <div class="form-row">
+<script type="text/tmpl" id="script_renting_complete_form_tmpl_en">
+  <h4 class="brand-primary my-3 customer_component">Customer's detail</h4>
+  <div class="form-row customer_component">
     <div class="form-group col-md-6">
-      <label for="name">Nombre *</label>
+      <label for="name">Name *</label>
       <input class="form-control" id="customer_name" name="customer_name" type="text"
-        placeholder="Nombre*" maxlength="40">
+        placeholder="Name*" maxlength="40">
     </div>
     <div class="form-group col-md-6">
-      <label for="surname">Apellidos*</label>
+      <label for="surname">Surname*</label>
       <input class="form-control" id="customer_surname" name="customer_surname" type="text"
-        placeholder="Apellidos" maxlength="40">
+        placeholder="Surname" maxlength="40">
     </div>
   </div>
-  <div class="form-row">
+  <div class="form-row customer_component">
     <div class="form-group col-md-6">
-      <label for="email">Correo electrónico*</label>
+      <label for="email">Email*</label>
       <input class="form-control" id="customer_email" name="customer_email" type="text"
-        placeholder="Correo electrónico" maxlength="50">
+        placeholder="Email" maxlength="50">
     </div>
     <div class="form-group col-md-6">
-      <label for="confirm_customer_email">Confirmar correo electrónico*</label>
+      <label for="confirm_customer_email">Confirm email*</label>
       <input class="form-control" id="confirm_customer_email" name="confirm_customer_email" type="text"
-        placeholder="Confirmar correo electrónico" maxlength="50">
+        placeholder="Confirm email" maxlength="50">
     </div>
   </div>
-  <div class="form-row">
+  <div class="form-row customer_component">
     <div class="form-group col-md-6">
-      <label for="customer_phone">Teléfono principal*</label>
+      <label for="customer_phone">Phone number*</label>
       <input class="form-control" id="customer_phone" name="customer_phone" type="text"
-        placeholder="Teléfono principal" maxlength="15">
+        placeholder="Phone number" maxlength="15">
     </div>
     <div class="form-group col-md-6">
       <label
-        for="driver_date_of_birth">Fecha de nacimiento del conductor*</label>
+        for="driver_date_of_birth">Date of birth*</label>
       <div class="custom-date-form">
         <div class="custom-date-item">
           <select name="driver_date_of_birth_day" id="driver_date_of_birth_day"
@@ -51,70 +50,72 @@
       <input type="hidden" name="driver_date_of_birth" id="driver_date_of_birth"></input>
     </div> 
   </div>
-  <div class="form-row">
+  <div class="form-row customer_component">
     <div class="form-group col-md-12">
-      <label for="email">Alojamiento en destino</label>
-      <textarea name="destination_accommodation" id="destination_accommodation" placeholder="Alojamiento" 
+      <label for="email">Accommodation</label>
+      <textarea name="destination_accommodation" id="destination_accommodation" placeholder="Accommodation" 
        rows="1" style="width: 100%; padding: 0.8rem; overflow: hidden"></textarea>
     </div> 
   </div>
 
-  <h4 class="brand-primary my-3">Dirección del cliente</h4>
-  <div class="form-row">
+  <h4 class="brand-primary my-3 customer_component">Home address</h4>
+  <div class="form-row customer_component">
     <div class="form-group col-md-12">
-      <label for="street">Dirección</label>
-      <input class="form-control" id="street" name="street" type="text" maxlength="60" placeholder="Dirección">
+      <label for="street">Address</label>
+      <input class="form-control" id="street" name="street" type="text" maxlength="60" placeholder="Address">
     </div>
   </div>
-  <div class="form-row">
+  <div class="form-row customer_component">
     <div class="form-group col-md-6">
-      <label for="city">Ciudad</label>
-      <input class="form-control" id="city" name="city" type="text" maxlength="50" placeholder="Ciudad">
+      <label for="city">City</label>
+      <input class="form-control" id="city" name="city" type="text" maxlength="50" placeholder="City">
     </div>
     <div class="form-group col-md-6">
-      <label for="state">Provincia</label>
-      <input class="form-control" id="state" name="state" type="text" maxlength="50" placeholder="Provincia">
+      <label for="state">County</label>
+      <input class="form-control" id="state" name="state" type="text" maxlength="50" placeholder="County">
     </div>
     <div class="form-group col-md-6">
-      <label for="state">Código Postal</label>
-      <input class="form-control" id="state" name="state" type="text" maxlength="10" placeholder="Código Postal">
+      <label for="state">Postal code</label>
+      <input class="form-control" id="zip" name="zip" type="text" maxlength="10" placeholder="Postal code">
     </div>
     <div class="form-group col-md-6">
-      <label class="full-width" for="country">País
+      <label class="full-width" for="country">Country
         <select name="country" id="country" class="form-control">
         </select>
       </label>
     </div>
   </div>
 
-  <h4 class="brand-primary my-3">Datos del vuelo</h4>
+  <h4 class="brand-primary my-3">Flight</h4>
   <div class="form-row">
     <div class="form-group col-md-4">
-      <label for="flight_company">Compañía</label>
+      <label for="flight_company">Company</label>
       <input class="form-control" id="flight_company" name="flight_company" type="text"
-        placeholder="Compañía">
+        placeholder="Company" maxlength="80">
     </div>
     <div class="form-group col-md-4">
-      <label for="flight_number">Número de vuelo</label>
+      <label for="flight_number">Flight Number</label>
       <input class="form-control" id="flight_number" name="flight_number" type="text"
-        placeholder="Número de vuelo">
+        placeholder="Flight Number" maxlength="10">
     </div>
     <div class="form-group col-md-4">
-      <label for="flight_time">Hora estimada de llegada</label>
+      <label for="flight_time">Estimated Time</label>
       <input class="form-control" id="flight_time" name="flight_time" type="text"
-        placeholder="Hora estimada de llegada">
+        placeholder="Estimated Time" maxlength="5">
     </div>
   </div>
 
-  <h4 class="brand-primary my-3">Información adicional</h4>
+  <h4 class="brand-primary my-3">Additional information</h4>
   <div class="form-row">
     <div class="form-group col-md-12">
-      <label for="comments">Comentarios</label>
-      <textarea name="comments" id="comments" placeholder="Comentarios"
+      <label for="comments">Comments</label>
+      <textarea name="comments" id="comments" placeholder="Comments"
         style="width: 100%; height: 100px; padding: 0.8rem;"></textarea>
     </div>
   </div>
-
+  <!-- Reservation : payment -->
   <div id="payment_detail"></div>
 
 </script>
+
+
