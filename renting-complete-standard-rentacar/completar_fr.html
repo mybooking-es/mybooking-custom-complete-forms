@@ -1,0 +1,120 @@
+<script type="text/tmpl" id="script_renting_complete_form_tmpl_fr">
+
+    <h4 class="brand-primary my-3 customer_component">Informations client</h4>
+    <div class="form-row customer_component">
+      <div class="form-group col-md-6">
+        <label for="name">Nom *</label>
+        <input class="form-control" id="customer_name" name="customer_name" type="text"
+          placeholder="Nom*" maxlength="40">
+      </div>
+      <div class="form-group col-md-6">
+        <label for="surname">Noms de famille*</label>
+        <input class="form-control" id="customer_surname" name="customer_surname" type="text"
+          placeholder="Noms de famille" maxlength="40">
+      </div>
+    </div>
+    <div class="form-row customer_component">
+      <div class="form-group col-md-6">
+        <label for="email">Courrier électroniqueo*</label>
+        <input class="form-control" id="customer_email" name="customer_email" type="text"
+          placeholder="Courrier électroniqueo" maxlength="50">
+      </div>
+      <div class="form-group col-md-6">
+        <label for="confirm_customer_email">Confirmez votre e-mail*</label>
+        <input class="form-control" id="confirm_customer_email" name="confirm_customer_email" type="text"
+          placeholder="Confirmez votre e-mail" maxlength="50">
+      </div>
+    </div>
+    <div class="form-row customer_component">
+      <div class="form-group col-md-6">
+        <label for="customer_phone">Téléphone principal*</label>
+        <input class="form-control" id="customer_phone" name="customer_phone" type="text"
+          placeholder="Téléphone principal" maxlength="15">
+      </div>
+      <div class="form-group col-md-6">
+        <label
+          for="driver_date_of_birth">Date de naissancer *</label>
+        <div class="custom-date-form">
+          <div class="custom-date-item">
+            <select name="driver_date_of_birth_day" id="driver_date_of_birth_day"
+              class="form-control" required></select>
+          </div>
+          <div class="custom-date-item">
+            <select name="driver_date_of_birth_month" id="driver_date_of_birth_month"
+              class="form-control" required></select>
+          </div>
+          <div class="custom-date-item">
+            <select name="driver_date_of_birth_year" id="driver_date_of_birth_year"
+              class="form-control" required></select>
+          </div>
+        </div>
+        <input type="hidden" name="driver_date_of_birth" id="driver_date_of_birth"></input>
+      </div>
+    </div>
+    <div class="form-row customer_component">
+      <div class="form-group col-md-12">
+        <label for="email">Hébergement à destination</label>
+        <textarea name="destination_accommodation" id="destination_accommodation" placeholder="Hébergement"
+         rows="1" style="width: 100%; padding: 0.8rem; overflow: hidden"></textarea>
+      </div>
+    </div>
+
+    <h4 class="brand-primary my-3 customer_component">Adresse du client</h4>
+    <div class="form-row customer_component">
+      <div class="form-group col-md-12">
+        <label for="street">Adresse *</label>
+        <input class="form-control" id="street" name="street" type="text" maxlength="60" placeholder="Adresse" required>
+      </div>
+    </div>
+    <div class="form-row customer_component">
+      <div class="form-group col-md-6">
+        <label for="city">Ville *</label>
+        <input class="form-control" id="city" name="city" type="text" maxlength="50" placeholder="Ville" required>
+      </div>
+      <div class="form-group col-md-6">
+        <label for="state">Province *</label>
+        <input class="form-control" id="state" name="state" type="text" maxlength="50" placeholder="Province" required>
+      </div>
+      <div class="form-group col-md-6">
+        <label for="state">Code postal *</label>
+        <input class="form-control" id="state" name="state" type="text" maxlength="10" placeholder="Code postal" required>
+      </div>
+      <div class="form-group col-md-6">
+        <label class="full-width" for="country">Pays *
+          <select name="country" id="country" class="form-control" required>
+          </select>
+        </label>
+      </div>
+    </div>
+
+    <h4 class="brand-primary my-3">Données de vol</h4>
+    <div class="form-row">
+      <div class="form-group col-md-4">
+        <label for="flight_company">Compagnie</label>
+        <input class="form-control" id="flight_company" name="flight_company" type="text"
+          placeholder="Compagnie" maxlength="80">
+      </div>
+      <div class="form-group col-md-4">
+        <label for="flight_number">Numéro de vol *</label>
+        <input class="form-control" id="flight_number" name="flight_number" type="text"
+          placeholder="Numéro de vol"  maxlength="10" required>
+      </div>
+      <div class="form-group col-md-4">
+        <label for="flight_time">Heure d&#39;arrivée estimée</label>
+        <input class="form-control" id="flight_time" name="flight_time" type="text"
+          placeholder="Heure d&#39;arrivée estimée" maxlength="5">
+      </div>
+    </div>
+
+    <h4 class="brand-primary my-3">Information complémentaire</h4>
+    <div class="form-row">
+      <div class="form-group col-md-12">
+        <label for="comments">Comentarios</label>
+        <textarea name="comments" id="comments" placeholder="Commentaires"
+          style="width: 100%; height: 100px; padding: 0.8rem;"></textarea>
+      </div>
+    </div>
+
+    <div id="payment_detail"></div>
+
+  </script>
