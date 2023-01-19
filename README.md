@@ -17,9 +17,10 @@ ready to use. Just create a document the plugin described and insert the code.
 
 ## Pre-made forms
 
-These are forms ready to use with mybooking theme. If you are using other theme, we recommend
-to use the theme CSS classes to build the forms that match the theme design guides. Take
-these forms as a reference of the fields and sizes.
+These are forms ready to use with mybooking theme or other theme.
+
+In mybooking-theme folder there are examples to use with mybooking theme.
+In mybooking-plugin folder there are examples to use with any theme.
 
 ### renting-complete-standard-rentacar
  
@@ -40,6 +41,8 @@ Includes the flight number instead of alternative phone number
 Includes the number of places instead of alternative phone number
 
 ## Fields
+
+Here there is a list of all fields that you can use to include in your custom forms.
 
 | Campo                                               | Descripción                              | Detalle |                                                                              |
 | --------------------------------------------------- | ---------------------------------------- | ------- | ---------------------------------------------------------------------------- |
