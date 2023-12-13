@@ -1,0 +1,120 @@
+<script type="text/tmpl" id="script_renting_complete_form_tmpl_it">
+
+    <h4 class="brand-primary customer_component">Informazioni per il cliente</h4>
+    <div class="mb-form-row customer_component">
+      <div class="mb-form-group mb-col-md-6">
+        <label for="name">Nome *</label>
+        <input class="mb-form-control" id="customer_name" name="customer_name" type="text"
+          placeholder="Nome*" maxlength="40">
+      </div>
+      <div class="mb-form-group mb-col-md-6">
+        <label for="surname">Cognomi*</label>
+        <input class="mb-form-control" id="customer_surname" name="customer_surname" type="text"
+          placeholder="Cognomi" maxlength="40">
+      </div>
+    </div>
+    <div class="mb-form-row customer_component">
+      <div class="mb-form-group mb-col-md-6">
+        <label for="email">E-mail*</label>
+        <input class="mb-form-control" id="customer_email" name="customer_email" type="text"
+          placeholder="E-mail" maxlength="50">
+      </div>
+      <div class="mb-form-group mb-col-md-6">
+        <label for="confirm_customer_email">Conferma email*</label>
+        <input class="mb-form-control" id="confirm_customer_email" name="confirm_customer_email" type="text"
+          placeholder="Conferma email" maxlength="50">
+      </div>
+    </div>
+    <div class="mb-form-row customer_component">
+      <div class="mb-form-group mb-col-md-6">
+        <label for="customer_phone">Telefono principale*</label>
+        <input class="mb-form-control" id="customer_phone" name="customer_phone" type="text"
+          placeholder="Telefono principale" maxlength="15">
+      </div>
+      <div class="mb-form-group mb-col-md-6">
+        <label
+          for="driver_date_of_birth">Data di nascita del conducente*</label>
+        <div class="custom-date-form">
+          <div class="custom-date-item">
+            <select name="driver_date_of_birth_day" id="driver_date_of_birth_day"
+              class="mb-form-control"></select>
+          </div>
+          <div class="custom-date-item">
+            <select name="driver_date_of_birth_month" id="driver_date_of_birth_month"
+              class="mb-form-control"></select>
+          </div>
+          <div class="custom-date-item">
+            <select name="driver_date_of_birth_year" id="driver_date_of_birth_year"
+              class="mb-form-control"></select>
+          </div>
+        </div>
+        <input type="hidden" name="driver_date_of_birth" id="driver_date_of_birth"></input>
+      </div> 
+    </div>
+    <div class="mb-form-row customer_component">
+      <div class="mb-form-group mb-col-md-12">
+        <label for="email">Alloggio a destinazione</label>
+        <textarea name="destination_accommodation" id="destination_accommodation" placeholder="Alloggio" 
+         rows="1" style="width: 100%; padding: 0.8rem; overflow: hidden"></textarea>
+      </div> 
+    </div>
+  
+    <h4 class="brand-primary customer_component">Indirizzo del cliente</h4>
+    <div class="mb-form-row customer_component">
+      <div class="mb-form-group mb-col-md-12">
+        <label for="street">Indirizzo</label>
+        <input class="mb-form-control" id="street" name="street" type="text" maxlength="60" placeholder="Indirizzo">
+      </div>
+    </div>
+    <div class="mb-form-row customer_component">
+      <div class="mb-form-group mb-col-md-6">
+        <label for="city">Città</label>
+        <input class="mb-form-control" id="city" name="city" type="text" maxlength="50" placeholder="Città" required>
+      </div>
+      <div class="mb-form-group mb-col-md-6">
+        <label for="state">Provincia</label>
+        <input class="mb-form-control" id="state" name="state" type="text" maxlength="50" placeholder="Provincia" required>
+      </div>
+      <div class="mb-form-group mb-col-md-6">
+        <label for="state">Codice postale</label>
+        <input class="mb-form-control" id="state" name="state" type="text" maxlength="10" placeholder="Codice postale" required>
+      </div>
+      <div class="mb-form-group mb-col-md-6">
+        <label class="full-width" for="country">Paese
+          <select name="country" id="country" class="mb-form-control">
+          </select required>
+        </label>
+      </div>
+    </div>
+  
+    <h4 class="brand-primary">Datos del vuelo</h4>
+    <div class="mb-form-row">
+      <div class="mb-form-group mb-col-md-4">
+        <label for="flight_company">Linea aerea</label>
+        <input class="mb-form-control" id="flight_company" name="flight_company" type="text"
+          placeholder="Compañía" maxlength="80" required>
+      </div>
+      <div class="mb-form-group mb-col-md-4">
+        <label for="flight_number">Numero di volo *</label>
+        <input class="mb-form-control" id="flight_number" name="flight_number" type="text"
+          placeholder="Número de vuelo"  maxlength="10" required>
+      </div>
+      <div class="mb-form-group mb-col-md-4">
+        <label for="flight_time">Tempo stimato di arrivo</label>
+        <input class="mb-form-control" id="flight_time" name="flight_time" type="text"
+          placeholder="Tempo stimato di arrivo" maxlength="5" required>
+      </div>
+    </div>
+  
+    <h4 class="brand-primary">Informazioni supplementari</h4>
+    <div class="mb-form-row">
+      <div class="mb-form-group mb-col-md-12">
+        <label for="comments">Comentarios</label>
+        <textarea name="comments" id="comments" placeholder="Commenti"
+          style="width: 100%; height: 100px; padding: 0.8rem;"></textarea>
+      </div>
+    </div>
+  
+    <div id="payment_detail"></div>
+  
+  </script>

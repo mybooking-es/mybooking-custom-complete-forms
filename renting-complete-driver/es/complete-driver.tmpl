@@ -1,0 +1,158 @@
+<script type="text/tmpl" id="script_renting_complete_form_tmpl_es">
+
+  <h4 class="brand-primary customer_component">Información del cliente</h4>
+  <div class="mb-form-row customer_component">
+    <div class="mb-form-group mb-col-md-6">
+      <label for="name">Nombre *</label>
+      <input class="mb-form-control" id="customer_name" name="customer_name" type="text"
+        placeholder="Nombre*" maxlength="40">
+    </div>
+    <div class="mb-form-group mb-col-md-6">
+      <label for="email">Correo electrónico *</label>
+      <input class="mb-form-control" id="customer_email" name="customer_email" type="text"
+        placeholder="Correo electrónico" maxlength="50">
+    </div>
+  </div>
+  <div class="mb-form-row customer_component">
+    <div class="mb-form-group mb-col-md-6">
+      <label for="surname">Apellidos *</label>
+      <input class="mb-form-control" id="customer_surname" name="customer_surname" type="text"
+        placeholder="Apellidos" maxlength="40">
+    </div>
+    <div class="mb-form-group mb-col-md-6">
+      <label for="confirm_customer_email">Confirmar correo electrónico *</label>
+      <input class="mb-form-control" id="confirm_customer_email" name="confirm_customer_email" type="text"
+        placeholder="Confirmar correo electrónico" maxlength="50">
+    </div>
+  </div>
+  <div class="mb-form-row customer_component">
+    <div class="mb-form-group mb-col-md-6">
+      <label for="customer_phone">Teléfono principal *</label>
+      <input class="mb-form-control" id="customer_phone" name="customer_phone" type="text"
+        placeholder="Teléfono principal" maxlength="15">
+    </div>
+  </div>
+
+
+  <h4>Datos del conductor</h4>
+  <div class="mb-form-row">
+    <div class="mb-form-group mb-col-md-6">
+      <label for="driver_name">Nombre *</label>
+      <input class="mb-form-control" id="driver_name" name="driver_name" type="text" placeholder="Nombre" maxlength="40" required="">
+    </div>
+    <div class="mb-form-group mb-col-md-6">
+      <label for="driver_surname">Apellidos *</label>
+      <input class="mb-form-control" id="driver_surname" name="driver_surname" type="text" placeholder="Apellidos" maxlength="40" required="">
+    </div>
+  </div>
+  <div class="mb-form-row customer_component">
+    <div class="mb-form-group mb-col-md-6">
+      <label for="street">Dirección *</label>
+      <input class="mb-form-control" id="street" name="street" type="text" maxlength="60" placeholder="Calle" required="">
+    </div>
+    <div class="mb-form-group mb-col-md-2">
+      <label for="number">Número *</label>
+      <input class="mb-form-control" id="complement" name="number" type="text" maxlength="10" placeholder="Número" required="">
+    </div>
+    <div class="mb-form-group mb-col-md-4">
+      <label for="complement">Complemento</label>
+      <input class="mb-form-control" id="complement" name="complement" type="text" maxlength="20" placeholder="Piso / Puerta">
+    </div>
+  </div>
+  <div class="mb-form-row customer_component">
+    <div class="mb-form-group mb-col-md-6">
+      <label for="city">Ciudad *</label>
+      <input class="mb-form-control" id="city" name="city" type="text" maxlength="50" placeholder="Ciudad" required="">
+    </div>
+    <div class="mb-form-group mb-col-md-6">
+      <label for="state">Provincia *</label>
+      <input class="mb-form-control" id="state" name="state" type="text" maxlength="50" placeholder="Provincia" required="">
+    </div>
+    <div class="mb-form-group mb-col-md-6">
+      <label for="state">Código Postal *</label>
+      <input class="mb-form-control" id="state" name="state" type="text" maxlength="10" placeholder="Código Postal" required="">
+    </div>
+    <div class="mb-form-group mb-col-md-6">
+      <label class="full-width" for="country">País *</label>
+      <select name="country" id="country" class="mb-form-control" required="">
+      </select>
+    </div>
+  </div>
+  <div class="mb-form-row">
+    <div class="mb-form-group mb-col-md-6">
+      <label for="driver_document_id">NIF/Pasaporte *</label>
+      <input class="mb-form-control" id="driver_document_id" name="driver_document_id" type="text" placeholder="NIF/Pasaporte" maxlength="50" required="">
+    </div>
+    <div class="mb-form-group mb-col-md-6">
+      <label for="driver_document_id_date">Fecha expedición *</label>
+      <div class="custom-date-form">
+        <div class="custom-date-item">
+          <select name="driver_document_id_date_day" id="driver_document_id_date_day" class="mb-form-control" required=""></select>
+        </div>
+        <div class="custom-date-item">
+          <select name="driver_document_id_date_month" id="driver_document_id_date_month" class="mb-form-control" required=""></select>
+        </div>
+        <div class="custom-date-item">
+          <select name="driver_document_id_date_year" id="driver_document_id_date_year" class="mb-form-control" required=""></select>
+        </div>
+      </div>
+      <input type="hidden" name="driver_document_id_date" id="driver_document_id_date" required="">
+    </div>
+  </div>
+  <div class="mb-form-row">
+    <div class="mb-form-group mb-col-md-6">
+      <label for="driver_driving_license_number">Número permiso conducir *</label>
+      <input class="mb-form-control" id="driver_driving_license_number" name="driver_driving_license_number" type="text" placeholder="Número permiso conducir" maxlength="50" required="">
+    </div>
+    <div class="mb-form-group mb-col-md-6">
+      <label for="driver_driving_license_date">Fecha expedición de la licencia *</label>
+      <div class="custom-date-form">
+        <div class="custom-date-item">
+          <select name="driver_driving_license_date_day" id="driver_driving_license_date_day" class="mb-form-control" required=""></select>
+        </div>
+        <div class="custom-date-item">
+          <select name="driver_driving_license_date_month" id="driver_driving_license_date_month" class="mb-form-control" required=""></select>
+        </div>
+        <div class="custom-date-item">
+          <select name="driver_driving_license_date_year" id="driver_driving_license_date_year" class="mb-form-control" required=""></select>
+        </div>
+      </div>
+      <input type="hidden" name="driver_driving_license_date" id="driver_driving_license_date" required="">
+    </div>
+  </div>
+  <div class="mb-form-row">
+    <div class="mb-form-group mb-col-md-6">
+      <label for="driver_driving_license_country">País expedición *
+        </label>
+        <select name="driver_driving_license_country" id="driver_driving_license_country" class="mb-form-control select2-hidden-accessible" required="" tabindex="-1" aria-hidden="true">
+        </select><span class="select2 select2-container select2-container--bootstrap4 select2-container--below" dir="ltr" style="width: 100%;"></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+    </div>
+    <div class="mb-form-group mb-col-md-6">
+      <label for="driver_date_of_birth">Fecha de nacimiento *</label>
+      <div class="custom-date-form">
+        <div class="custom-date-item">
+          <select name="driver_date_of_birth_day" id="driver_date_of_birth_day" class="mb-form-control" required=""></select>
+        </div>
+        <div class="custom-date-item">
+          <select name="driver_date_of_birth_month" id="driver_date_of_birth_month" class="mb-form-control" required="">></select>
+        </div>
+        <div class="custom-date-item">
+          <select name="driver_date_of_birth_year" id="driver_date_of_birth_year" class="mb-form-control" required=""></select>
+        </div>
+      </div>
+      <input type="hidden" name="driver_date_of_birth" id="driver_date_of_birth">
+    </div>
+  </div>
+
+  <h4 class="brand-primary">Información adicional</h4>
+  <div class="mb-form-row">
+    <div class="mb-form-group mb-col-md-12">
+      <label for="comments">Comentarios</label>
+      <textarea name="comments" id="comments" placeholder="Comentarios"
+        style="width: 100%; height: 200px; padding: 0.8rem;"></textarea>
+    </div>
+  </div>
+
+  <div id="payment_detail"></div>
+
+</script>

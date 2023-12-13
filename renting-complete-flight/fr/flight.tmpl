@@ -1,0 +1,54 @@
+<script type="text/tmpl" id="script_renting_complete_form_tmpl_fr">
+  <h4 class="brand-primary">Coordonnées du client</h4>
+  <div class="mb-form-row">
+    <div class="mb-form-group mb-col-md-6">
+      <label for="name">Nom *</label>
+      <input class="mb-form-control" id="customer_name" name="customer_name" type="text"
+        placeholder="Nom" maxlength="40">
+    </div>
+    <div class="mb-form-group mb-col-md-6">
+      <label for="surname">Nom de famille *</label>
+      <input class="mb-form-control" id="customer_surname" name="customer_surname" type="text"
+        placeholder="Nom de famille" maxlength="40">
+    </div>
+  </div>
+  <div class="mb-form-row">
+    <div class="mb-form-group mb-col-md-6">
+      <label for="email">E-mail*</label>
+      <input class="mb-form-control" id="customer_email" name="customer_email" type="text"
+        placeholder="E-mail" maxlength="50">
+    </div>
+    <div class="mb-form-group mb-col-md-6">
+      <label for="confirm_customer_email">Confirmez votre e-mail*</label>
+      <input class="mb-form-control" id="confirm_customer_email" name="confirm_customer_email" type="text"
+        placeholder="Confirmez votre e-mail" maxlength="50">
+    </div>
+  </div>
+  <div class="mb-form-row">
+    <div class="mb-form-group mb-col-md-6">
+      <label for="customer_phone">Numéro de téléphone*</label>
+      <input class="mb-form-control" id="customer_phone" name="customer_phone" type="text"
+        placeholder="Numéro de téléphone" maxlength="15">
+    </div>
+    <div class="mb-form-group mb-col-md-6">
+      <label
+        for="flight_number">Numéro de vol*</label>
+      <input class="mb-form-control" id="flight_number" name="flight_number" type="text"
+        placeholder="Numéro de vol" maxlength="10" required="true">      
+    </div> 
+  </div>
+
+  <h4 class="brand-primary">Information additionnelle</h4>
+  <div class="mb-form-row">
+    <div class="mb-form-group mb-col-md-12">
+      <label for="comments">Commentaires</label>
+      <textarea name="comments" id="comments" placeholder="Commentaires"
+        style="width: 100%; height: 100px; padding: 0.8rem;"></textarea>
+    </div>
+  </div>
+  <!-- Reservation : payment -->
+  <div id="payment_detail"></div>
+
+</script>
+
+
